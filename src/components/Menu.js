@@ -101,12 +101,12 @@ const Menu = () => {
     }
 
     return (
-        <div>
+        <div id="main">
             <h1>Our Menu</h1>
-            <p onClick={handleCategories}>All</p>
-            <p onClick={handleCategories}>Breakfast</p>
-            <p onClick={handleCategories}>Lunch</p>
-            <p onClick={handleCategories}>Shakes</p>
+            <p  onClick={handleCategories}>All</p>
+            <p id="filter-btn-1" onClick={handleCategories}>Breakfast</p>
+            <p id="filter-btn-2" onClick={handleCategories}>Lunch</p>
+            <p id="filter-btn-3" onClick={handleCategories}>Shakes</p>
 
             {
                 dishes.map(food=>(
